@@ -1,71 +1,70 @@
 <link href="style.css" rel="stylesheet">
-<link href="button.css" rel="stylesheet" id="bootstrap-css">
 
 <div class="container">  
   <form id="contact" action="" method="post">
     <h1>Create Issue</H1>
 	<br>
-	
-<div>
+
+	<div>
 <label>Project <span style="color:red">*</span></label>
 <select name="cars">
-  <option value="Internetbank">Internetbank</option>
-  <option value="xxxxxxxxx">xxxxxxxxx</option>
-  <option value="xxxxxxxxx">xxxxxxxxx</option>
-  <option value="xxxxxxxxx">xxxxxxxxx</option>
-  <option value="xxxxxxxxx">xxxxxxxxx</option>
-  <option value="xxxxxxxxx">xxxxxxxxx</option>
+  <option value="Service Desk(SD)">Service Desk(SD)</option>
+  <option value="etc.">etc.</option>
 </select>
 </div>
-
-	<!-- <div> -->
-<!-- <p>Issue Type <span style="color:red">*</span></p> -->
-<!-- <select name="cars"> -->
-  <!-- <option value="Internetbank">Incident</option> -->
-<!-- </select> -->
-<!-- </div> -->
-
 	
-	<div>
-<label>Priority <span style="color:red">*</span></label>
-<select name="cars">
-  <option value="Blocker">Blocker</option>
-  <option value="Minor">Minor</option>
-</select>
-</div>
-
-
 <div>
-<label>Impact <span style="color:red">*</span></label>
+<label>Issue type<span style="color:red">*</span></label>
 <select name="cars">
-  <option value="Moderate">Moderate</option>
-  <option value="Minor">Minor</option>
-	<option value="Major">Major</option>
+  <option value="Internetbank">Internetbank</option>
+  <option value="Workplace problem">Workplace problem</option>
+  <option value="Incident report">Incident report</option>
+  <option value="etc.">etc.</option>
 </select>
 </div>
-
-<!-- <div> -->
-<!-- <p>Urgency <span style="color:red">*</span></p> -->
-<!-- <select name="Urgency"> -->
-  <!-- <option value="Low">Low</option> -->
-  <!-- <option value="Medium">Medium</option> -->
-  <!-- <option value="High">High</option> -->
-  <!-- <option value="Critical">Critical</option> -->
-<!-- </select> -->
-<!-- </div> -->
-	
+		
 <div>
 Reporter: <input type="text" name="Reporter" value="Aldis">
 </div>
 
+<br>
+<hr>
+
+	<div>
+<label>Priority <span style="color:red">*</span></label>
+<select name="cars">
+  <option value="Blocker">Blocker</option>
+  <option value="Critical">Critical</option>
+  <option value="Major"> Major</option>
+  <option value="Low priority">Low priority</option>
+</select>
+</div>
+
 <div>
-<label>Customer or process<span style="color:red">*</span></label>
+<label>Impact <span style="color:red">*</span></label>
+<select name="cars">
+  <option value="None">None</option>
+  <option value="Extensive/Widespread">Extensive/Widespread</option>
+  <option value="Significant/Large">Significant/Large</option>
+  <option value="Moderate/Limited">Moderate/Limited</option>
+  <option value="Minor/Localized">Minor/Localized</option>
+</select>
+</div>
+
+<div>
+Effected customers: <input type="text" name="Effected customers" value="">
+</div>
+
+<br>
+<hr>
+
+<div>
+<label>Effected scope<span style="color:red">*</span></label>
 <select name="cars">
   <option value="Corporate">Customer</option>
   <option value="Private">Process</option>
 </select>
 </div>
-
 
 <div>
 <label>Type of customer<span style="color:red">*</span></label>
@@ -80,6 +79,7 @@ Reporter: <input type="text" name="Reporter" value="Aldis">
 <select name="cars">
   <option value="Corporate">Ibank</option>
   <option value="Private">Mobile app</option>
+  <option value="Private">ibank through mob app</option>
 </select>
 </div>
 
@@ -88,6 +88,7 @@ Reporter: <input type="text" name="Reporter" value="Aldis">
 <select name="cars">
   <option value="Corporate">Smart ID</option>
   <option value="Private">Calculator</option>
+  <option value="Private">Code card</option>
 </select>
 </div>
 
@@ -104,16 +105,12 @@ Date<span style="color:red">*</span> <input type="text" name="Reporter" value=""
 Time<span style="color:red">*</span> <input type="text" name="Reporter" value="">
 </div>	
 	
-	<br>
-<div >
-                
-                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Actions that led to specific error:" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
-                
-            <small>Press + to add another form field</small>
-
+<div >     
+<p>To find cause:</p>
+           <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Please state actions that led to specific error:" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>  
+           <small>Press + to add another form field</small>
 </div>
 	
-
 	<div class="container">
 <div>
 Summary <span style="color:red">*</span><input type="text" name="Reporter" value="">
@@ -122,8 +119,6 @@ Summary <span style="color:red">*</span><input type="text" name="Reporter" value
     <fieldset>
       <textarea placeholder="Describe what were expectations and what went wrong" tabindex="5" required></textarea>
     </fieldset>
-	
-	
 	
 	<div><p>Attachment</p><input name="myFile" type="file"></div>
 	<div>
@@ -134,8 +129,7 @@ Summary <span style="color:red">*</span><input type="text" name="Reporter" value
   <option value="LT">LT</option>
 </select>
 </div>
-	
-	
+
 	<br>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Create</button>
